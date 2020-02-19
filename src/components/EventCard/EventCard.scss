@@ -1,0 +1,105 @@
+@import "../../scss/base";
+
+.EventCard {
+    width: 32%;
+    position: relative;
+    margin-bottom: 44px;
+
+    &:hover {
+        cursor: pointer;
+
+        .EventCard__description {
+            color: $black;
+        }
+
+        .EventCard__img {
+            transform: scale(1.1);
+            filter: brightness(0.7) contrast(110%);
+        }
+    }
+}
+
+.EventCard__img-container {
+    border-radius: 16px;
+    transform-origin: 0 0;
+    transition: transform 1.4s, visibility 1.4s ease-in;
+    overflow: hidden;
+    height: 200px;
+    border: 1px solid $gray-light;
+    margin-bottom: 16px;
+}
+
+.EventCard__link {
+    text-decoration: none;
+}
+
+.EventCard__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: 0.44s ease-in-out
+}
+
+.EventCard__like {
+    font-size: 32px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 4px;
+    top: 4px;
+    color: $white;
+    font-weight: 500;
+    @extend %base-transition;
+
+    &:before {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 500;
+        content: "\f004";
+        filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+        right: 12px;
+        top: 12px;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.EventCard__like--fill {
+    &:before {
+        font-weight: 900;
+        filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
+}
+
+.EventCard__title {
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: $black;
+    @extend %triple-dots;
+}
+
+.EventCard__description {
+    color: $gray-dark;
+    margin-bottom: 12px;
+    @extend %triple-dots;
+    @extend %base-transition;
+}
+
+.EventCard__bage {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    padding: 8px 16px;
+    color: $white;
+    background-color: $green;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.EventCard__bage--price {
+    background-color: $black;
+}

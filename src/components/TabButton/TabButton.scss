@@ -1,0 +1,27 @@
+@import "../../scss/base";
+
+.TabButton {
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 50px;
+    outline: none;
+    background-color: $purple-light;
+    border: none;
+    color: $purple-dark;
+    margin-right: 20px;
+    line-height: 44px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-sizing: border-box;
+    @extend %base-transition;
+
+    &:hover {
+        background-color: $purple;
+        color: $white;
+    }
+}
+
+.TabButton--active {
+    color: $white;
+    background-color: $purple;
+}

@@ -1,0 +1,35 @@
+@import "./scss/base";
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container--cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:after {
+        content: "";
+        flex: 0 0 32%
+    }
+}
+
+.container--filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: $gray-dark;
+    margin-top: 32px;
+}
+
+@import "./scss/media"

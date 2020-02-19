@@ -1,0 +1,27 @@
+// Colors
+
+$white: #ffffff;
+$purple: #8777D9;
+$purple-light: #EAE6FF;
+$purple-dark: #5243AA;
+$gray: #B3BAC5;
+$gray-light: #EBECF0;
+$gray-dark: #505F79;
+$black: #253858;
+$green: #36B37E;
+
+// Inheritance
+
+%base-transition {
+    transition: 0.3s ease-in-out
+}
+
+%btn-hover {
+    background-color: $purple-dark;
+}
+
+%triple-dots {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

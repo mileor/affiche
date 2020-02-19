@@ -1,0 +1,121 @@
+@media (max-width: 1112px) {
+
+    .container {
+        width: 960px;
+    }
+
+    .container--filters {
+        justify-content: space-between;
+    }
+
+    .TabButton {
+        margin-right: 0;
+    }
+
+    .Select {
+        margin: 0;
+    }
+}
+
+@media (max-width: 834px) {
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .Select {
+        margin-top: 28px;
+    }
+
+    .EventCard {
+        width: 48%;
+    }
+
+    .Header__container {
+        flex-wrap: wrap;
+    }
+
+    .Header__search {
+        order: 3;
+        flex: 0 1 100%;
+    }
+
+    .SearchInput {
+        margin-top: 32px;
+    }
+
+    .SearchInput__input {
+        width: 80%;
+    }
+
+    .SearchInput__link {
+        width: 20%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .container--search-results {
+        top: 84px;
+        max-height: 280px;
+    }
+}
+
+@media (max-width: 667px) {
+
+    .SearchResults__img {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
+    .SearchResults__link {
+        height: 32px;
+        padding: 16px;
+    }
+
+    .SearchResults__title {
+        line-height: 32px;
+        margin-left: 12px;
+        width: 70%;
+    }
+
+    .EventCard {
+        width: 100%;
+    }
+
+    .Select {
+        margin: 0;
+        flex: 0 1 100%;
+    }
+
+    .TabButton {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .SearchInput__input {
+        width: 72%;
+    }
+
+    .SearchInput__link {
+        width: 28%;
+        font-size: 14px;
+    }
+
+    .TabButton {
+        flex: 0 1 48%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .EventPage__text {
+        width: 100%;
+    }
+}

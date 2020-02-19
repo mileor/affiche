@@ -1,0 +1,23 @@
+@import "../../scss/base";
+
+.Select {
+    font-size: 16px;
+    height: 44px;
+    padding: 0 24px;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid $gray-light;
+    background-color: $white;
+    margin-left: auto;
+    @extend %base-transition;
+
+    &:active {
+        background-color: $gray-light;
+    }
+}
+
+.Select__icon {
+    padding-right: 8px;
+    color: $purple-dark;
+    font-size: 18px;
+}
